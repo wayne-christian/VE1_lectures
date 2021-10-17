@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Design Fundamentals: Week1</title>
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- Printing and PDF exports --> 
+<script>
+
+   let sections; 
+    for (i = 1; i < 40; i++) {
+  //console.log(i);
+sections += '<section data-menu-title="slide' + i + '" data-background="assets/week1/df_wk1_' + i + '.png" data-background-size="contain" data-background-color="#212121"></section>';
+}
+  //console.log(sections);  
+		</script>
+<style>
+html.jobs .slide-background, html.salary .slide-background, html.start .slide-background {
+	opacity: 0.7 !important;
+}
+.reveal p {
+	font-size: 80%;
+}
+.reveal p.small {
+	font-size: 50%;
+}
+.reveal p.tiny {
+	font-size: 60%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+}
+ul.dark {
+	list-style: none;
+}
+ul.dark li {
+	list-style: none;
+	height: auto;
+	line-height: normal;
+	margin-top: .1em!important;
+	margin-bottom: .1em!important;
+}
+.dark-back {
+	list-style: none;
+	background-color: #111;
+	padding: .1em!important;
+}
+.info {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	bottom: 60px;
+	color: #fff;
+}
+div.line {
+	width: 50%;
+	border-right: #fff 1px solid;
+	height: 10px;
+	box-sizing: border-box;
+}
+.grey {
+	background-color: #d5d6d8!important;
+}
+.white {
+	background-color: #fff!important;
+}
+.contain {
+	background-size: contain!important;
+}
+.agile {
+	background-size: 38%!important;
+}
+.reveal p.bullet {
+	list-style: disc inside none;
+	display: list-item;
+}
+#ryan {
+	background-position: center top!important;
+}
+div.jobholder {
+	position: absolute;
+	width: 30vw;
+	top: 0;
+	left: -10vw;
+	background-color: rgba(0,0,0,0.70);
+	border-radius: 25px;
+	padding: 25px;
+	color: white;
+}
+div.jobholder p, div.jobholder h3 {
+	color: white;
+}
+.reveal div.half {
+	float: left;
+	width: 50%;
+	font-size: 60%;
+	text-align: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section data-background-transition="convex" data-background="#333333">
+      <h2 >Hello</h2>
+      <p style="color:#F8AA00">Design Fundamentals (GRA1184M)</p>
+      <p style="color:#F8AA00">Workshop Code: 277584</p>
+      <p class="small" style="color:#F8AA00">(https://attendance.lincoln.ac.uk/)</p>
+        <p >Teams Code: <strong>fdnf3to</strong></p>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/week1assets/rainingcode.mp4" data-background-video-loop="loop">
+      <h3 >Wayne Christian</h3>
+      <p style="color:#F8AA00">Designer, Developer, Director & Senior Lecturer</p>
+    </section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/1217113" data-background-interactive> </section>
+    <!--    <section data-background-transition="convex" data-background-video="https://wayne-christian.github.io/WEB-AUTH-PRESENTATIONS/assets/week1assets/rainingcode.mp4" data-background-video-loop="loop">
+             
+              <h3 >Wayne Christian</h3>
+              <p style="color:#F8AA00">Designer, Developer, Director & Senior Lecturer</p>
+            </section>
+1202263
+948345
+850291
+162191
+1026394
+
+
+-->
+    <section data-menu-title="slide5" data-background="assets/week1/maker.jpg" data-background-size="1200px" data-background-color="#fff"></section>
+    <section data-background-transition="convex" >
+      <h4>Today</h4>
+      <p class="bullet"><strong>10:00 - 10:30:</strong> Overview of some basic design principles</p>
+      <p class="bullet"><strong>10.30 - 11:00:</strong> Demonstration in Adobe Illustrator</p>
+      <p class="bullet"><strong>11:00 - 11:30:</strong> Research and critical analysis</p>
+      <p class="bullet"><strong>11:30 - 12.30:</strong> Develop a range of A0 posters (using said principles)</p>
+      <p class="bullet"><strong>12:30-13:30:</strong> Show and tell</p>
+      <p class="bullet"><strong>Home work:</strong> Redesign for A3 420 x 297 mm and iphone xr 1792 x 828 px </p>
+      <p class="bullet">*Subject to change (depending how far we get)</p>
+    </section>
+    <section data-menu-title=" 3" >
+      <h4 class="">Please</h4>
+      <p class="bullet"><strong>Interrupt me</strong> if you have a question or are not sure on anything</p>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/logical.mp4"> </section>
+    <section data-background-video="assets/blast.mp4" data-background-video-loop="loop">
+      <h2>
+        <ul class="dark">
+          <li class="fragment fade-up"><span class="dark-back">Ideation</span></li>
+          <li class="fragment fade-up"><span class="dark-back">Research</span></li>
+          <li class="fragment fade-up"><span class="dark-back">Experimentation</span></li>
+          <li class="fragment fade-up"><span class="dark-back">Development</span> </li>
+          <li class="fragment fade-up"><span class="dark-back">Refinement </span></li>
+        </ul>
+      </h2>
+    </section>
+    <section>
+      <h3>What makes a “bad” design? What makes a “good” design?</h3>
+      <p>Graphic design is undoubtedly about aesthetics, which can be subjective</p>
+    </section>
+    <section>
+      <p>To craft a successful piece of graphic design, there are set graphic design principles/fundamentals you must consider and adhere to. If those are’t working in synergy, the whole design suffers.</p>
+    </section>
+    <section data-background-video="assets/heros.mp4"> </section>
+    <section>
+      <iframe src="https://embed.polleverywhere.com/free_text_polls/CeZB1iI1NdpEVR4ghMpve?controls=none&short_poll=true" width="1200px" height="600px"></iframe>
+    </section>
+    <section data-menu-title="slide5" data-background="assets/week1/df_wk1_5.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section data-menu-title="slide2" data-background="assets/week1/df_wk1_2.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section data-menu-title="slide1" data-background="assets/week1/alignment1.jpg" data-background-size="contain" data-background-color="#ededed"></section>
+    <section>
+      <h3>Alignment</h3>
+      <p>Alignment creates a sharper more unified design</p>
+      <p class="fragment">Alignment is one of the most basic, but most important principles of design, as it allows our eyes to see order</p>
+    </section>
+    <section>
+      <h3>Alignment</h3>
+      <p>Alignment creates a sharper more unified design</p>
+      <p class="fragment">Having a strong point of alignment within design allows our eyes to seamlessly flow through the visual message.</p>
+      <p class="fragment"> Aligning elements with one another so that every item has a visual connection with something else on the page, tightens a design and eliminates the haphazard, messy effect which comes from random placement of elements.</p>
+    </section>
+    <section>
+      <h3>Alignment</h3>
+      <p>Alignment creates a sharper more unified design</p>
+      <p class="fragment">Aligning elements with one another so that every item has a visual connection with something else on the page, tightens a design and eliminates the disorganised effect which comes from random placement of element (not always bad).</p>
+    </section>
+    <section>
+      <h3>Alignment</h3>
+      <p><strong>Alignment creates a sharper more unified design</strong></p>
+      <p class="fragment">Aligning elements which are not in close proximity with each other can provide an invisible connection, communicating the idea that they belong to the same piece.</p>
+      <p class="small"><a href="https://254-online.com/alignment-principle-design/">https://254-online.com/alignment-principle-design/</a></p>
+    </section>
+    <section data-menu-title="slide1" data-background="assets/week1/Aligned-vs-Not-aligned.png" data-background-size="contain" data-background-color="#4047b3"></section>
+    <section data-menu-title="slide0" data-background="assets/week1/df_wk1_0.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section>
+      <p>Consistent layout ensures the viewer always knows where to find the information they are looking for (functional).</p>
+    </section>
+    <section data-menu-title="slide36" data-background="assets/week1/df_wk1_36.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section>
+      <h3>Repetition</h3>
+      <p><strong>Repetition strengthens a design by tying together otherwise separate parts, and as a result, creates associations. </strong></p>
+    </section>
+    <section>
+      <h3>Repetition</h3>
+      <p class="fragment">Repetition is consistency. By repeating elements of a design, you immediately create a familiarity or identity.</p>
+      <p class="fragment">Repetition can also be used to create graphic elements, such as patterns, as long as it does’t become overwhelming; be conscious of contrast</p>
+    </section>
+    <section>
+      <h3>Repetition</h3>
+      <p class="fragment">Repetition helps identify that separate things belong together - like a family. Each individual in the family looks a bit different, but there are enough similarities that you can see they all related</p>
+    </section>
+    <section data-menu-title="slide35" data-background="assets/week1/df_wk1_35.jpg" data-background-size="contain" data-background-color="#fffceb"></section>
+    <section data-menu-title="slide28" data-background="assets/week1/df_wk1_28.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide27" data-background="assets/week1/df_wk1_27.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide26" data-background="assets/week1/df_wk1_26.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide25" data-background="assets/week1/df_wk1_25.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section>
+      <h3>Repetition</h3>
+      <p>This example of the visual identity design for Fort Point Beer by Manual shows how repetition is vitally important in branding. The company is trying to build a strong sense of recognition and the repetition of the pattern and illustration style</p>
+    </section>
+    <section data-menu-title="slide9" data-background="assets/week1/df_wk1_9.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section>
+      <h3>Contrast</h3>
+      <p><strong>Contrast is the most effective way to create emphasis and impact with your design</strong></p>
+      <p class="fragment">Contrast is created when two elements are total opposites. For example: big/small size, classic/contemporary fonts, thin/thick lines, cool/warm colours, dark/light, smooth/rough textures, horizontal/vertical,</p>
+      <p class="small"><a href="https://www.uxpin.com/studio/blog/design-with-contrast/">How to Design With Contrast (uxpin)</a></p>
+    </section>
+    <section>
+      <h3>Contrast</h3>
+      <p class="fragment"> Contrast plays a crucial part in the organisation of information on a page. It gives the reader a guide on where to look first; What is the most important point? What stands out the most?</p>
+      <p class="fragment"> It must be strong and obvious! Our eyes like contrast; don’t make differences look like a mistake. To have impact, the differences must be obvious.</p>
+    </section>
+    <section data-menu-title="slide6" data-background="assets/week1/df_wk1_6.jpg" data-background-size="contain" data-background-color="#212121"> </section>
+    <section data-menu-title="slide23" data-background="assets/week1/df_wk1_23.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide34" data-background="assets/week1/df_wk1_34.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide33" data-background="assets/week1/df_wk1_33.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide29" data-background="assets/week1/df_wk1_29.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section>
+      <h3>Hierarchy</h3>
+      <p><strong>Hierarchy creates organisation</strong></p>
+      <p class="fragment">Hierarchy creates a visual organisation to a design and gives the reader an idea of where to begin and finish reading. Each element that is part of the design can be given a ranking of priority. eg.</p>
+      <p class="fragment bullet">Headline</p>
+      <p class="fragment bullet">Image</p>
+      <p class="fragment bullet">Sub-heading</p>
+      <p class="fragment bullet">Call to action</p>
+      <p class="fragment bullet">body copy</p>
+      <p class="small"><a href="https://xd.adobe.com/ideas/process/information-architecture/visual-hierarchy-principles-examples/">visual-hierarchy-principles (Adobe)</a></p>
+    </section>
+    <section>
+      <h3>Hierarchy</h3>
+      <p class="fragment">You can then make decisions around position, size, contrast, colour etc. To ensure that the desired hierarchy is achieved</p>
+      <p class="fragment">Sometimes students try Increasing the size of lots of elements on a design as they feel that many points are “really important”. The problem with this approach is that nothing stands out anymore. </p>
+    </section>
+    <section>
+      <p>Generally there is a single message that is more important than all others, this should stand out the most and will lead the audience into the rest of the content.</p>
+    </section>
+    <section data-menu-title="slide37" data-background="assets/week1/df_wk1_37.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide38" data-background="assets/week1/df_wk1_38.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide39" data-background="assets/week1/df_wk1_39.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide30" data-background="assets/week1/df_wk1_30.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section>
+      <p class="fragment">Hierarchy in terms of typography means a consistent styling of similar copy throughout the entire document. In this example from Studio Dumbar, we have a heading, intro text, subheadings and body copy. All of which work together to lead the viewer through the information in the order the client intended</p>
+    </section>
+    <section data-menu-title="slide4" data-background="assets/week1/df_wk1_4.jpg" data-background-size="contain" data-background-color="#1d1d1b"></section>
+    <section>
+      <h3>Balance</h3>
+      <p><strong>Balance provides stability and structure to a design, either through symmetry or tension of elements.</strong></p>
+      <p class="fragment">Balance is the weight distributed on the page by the placement of elements using both symmetry and/or through tension</p>
+      <p class="small"><a href="https://99designs.co.uk/blog/tips/balance-symmetry-and-asymmetry/">symmetry and asymmetry</a></p>
+    </section>
+    <section>
+      <h3>Balance</h3>
+      <p>Symmetrical balance can be created with an invisible centre line where the weight of the elements on both halves of the page is even</p>
+      <p class="fragment">This form of symmetrical balance generally has a very traditional and harmonious feel even though, at times, it can seem less dynamic or adventurous.</p>
+    </section>
+    <section data-menu-title="slide31" data-background="assets/week1/df_wk1_31.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section>
+      <h3>Balance</h3>
+      <p>Balance through tension is used to good effect in the visual identity for Made For designed by Christopher Doyle & Co. The positioning of the strong left aligned copy at the top of the page plays against the imagery positioned at the bottom right. There is tension between the two elements and the negative space in between. The effect is has a dynamic and bold quality.</p>
+    </section>
+    <section data-menu-title="slide7" data-background="assets/week1/df_wk1_7.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-background-transition="convex" >
+      <h4>PART 2: Digital Inspiration</h4>
+      <p>Research your own good designs and add/annotate in your Padlet. I have set up a group area but suggest you create your own Padlet to document in greater depth.<a href="https://uol.padlet.org">UoL padlet</a></p>
+      <p class="small"><a href="https://uol.padlet.org/wayne_christian/6brbcwt25enzy0q0">inspiration padlet</a></p>
+      <p class="small"><a href="https://uol.padlet.org/wayne_christian/iv611efztednq39x">Group A padlet</a></p>
+      <p class="small"><a href="https://uol.padlet.org/wayne_christian/gawns9jhvggcizd5">Group B padlet</a></p>
+      <p class="small"><a href="https://uol.padlet.org/wayne_christian/4tz2noyx2pg2clc4">Group C padlet</a></p>
+    </section>
+    <section data-menu-title="slide10" data-background="assets/week1/df_wk1_10.png" data-background-size="contain" data-background-color="#fff"></section>
+    <section data-menu-title="slide12" data-background="assets/week1/df_wk1_12.png" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide13" data-background="assets/week1/df_wk1_13.png" data-background-size="contain" data-background-color="#000000"></section>
+    <section data-menu-title="slide14" data-background="assets/week1/df_wk1_14.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide15" data-background="assets/week1/df_wk1_15.gif" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide16" data-background="assets/week1/df_wk1_16.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide17" data-background="assets/week1/df_wk1_17.png" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide18" data-background="assets/week1/df_wk1_18.webp" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide19" data-background="assets/week1/df_wk1_19.jpg" data-background-size="cover" data-background-color="#212121"></section>
+    <section data-menu-title="slide20" data-background="assets/week1/df_wk1_20.png" data-background-size="contain" data-background-color="#fff"></section>
+    <section data-menu-title="slide21" data-background="assets/week1/df_wk1_21.jpg" data-background-size="contain" data-background-color="#212121"></section>
+    <section data-menu-title="slide22" data-background="assets/week1/df_wk1_22.png" data-background-size="contain" data-background-color="#ebebeb"></section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/1202263" data-background-interactive> </section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/948345" data-background-interactive> </section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/850291" data-background-interactive> </section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/162191" data-background-interactive> </section>
+    <section data-menu-title="" data-background-iframe="https://openprocessing.org/sketch/1026394" data-background-interactive> </section>
+    <section data-background-video="assets/spongebob.mp4" data-background-video-loop="loop">
+      <h3 class="fragment fade-up"><span class="dark-back">BE A SPONGE!</span></h3>
+      <p class="fragment fade-up"><span class="dark-back">Experiment & Differentiate</span></p>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/jumpfail.mp4">
+      <h3>Fail to prepare<br>
+        Prepare to fail!</h3>
+    </section>
+    <section>
+      <h2>Boom!</h2>
+    </section>
+  </div>
+</div>
+<script src="lib/js/head.min.js"></script> 
+<script src="js/reveal.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://code.highcharts.com/highcharts.js"></script> 
+<script src="https://code.highcharts.com/highcharts-more.js"></script> 
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script> 
+<script src="js/themes/mypbtheme.js"></script> 
+<script src="js/jquery.animateNumber.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</body>
+</html>
